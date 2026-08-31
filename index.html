@@ -1,1 +1,369 @@
-<h1>If you see this, then congratulations🎉🎉🎉, your website is live!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boring Perfect Pitch Test</title>
+</head>
+<body>
+    <h1>The Very Boring-Looking Perfect Pitch Test™</h1>
+    <h2>Why does this website exist?<h2>
+    <h4></h4>I made this website for two reasons:</h4>
+    <ol type=a>
+        <li>I have to make a flavourless website for a Fraser Hack Club workshop and this was the only decent idea that came to mind.</li>
+        <li>I have perfect pitch, but I am very slow at identifying notes and need something to train my pitch detection.</li>
+    </ol>
+    <p>So because of this, I thought to myself, why not make a quiz to test if you can identify the note played correctly? So here's a test to find out if you have perfect pitch, and/or if you're good at having perfect pitch.</p>
+ <h5>Please note that this test is intended to only be taken once. The questions are not randomized. (also no cheating please be honest about your score if you tell your friends about your result)</h5>
+ <h2>This is a 10 question quiz that will progressively get harder as the quiz continues.</h2>
+ <h2>Single note section</h2>
+ <h3>Question #1:</h3>
+<audio controls src="https://cdn.discordapp.com/attachments/953722764907413504/1544089153551995021/1_middle_c.mp3?ex=6a973c95&is=6a95eb15&hm=2ae7211513f399e138e90fc1a5e40b87005680648c54ece4c849d25a75964f8a&"></audio>
+<p></p>
+<div>
+    <label for="note">What note is played?</label>
+    <select id="q1" name="note">
+        <option value="c">C</option>
+        <option value="c#">C#/D♭</option>
+        <option value="d">D</option>
+        <option value="d#">D#/E♭</option>
+        <option value="e">E</option>
+        <option value="f">F</option>
+        <option value="f#">F#/G♭</option>
+        <option value="g">G</option>
+        <option value="g#">G#/A♭</option>
+        <option value="a">A</option>
+        <option value="a#">A#/B♭</option>
+        <option value="b">B</option>
+    </select>
+    <button onclick="checkq1()">check</button>
+    <span id="q1feedback"></span>
+</div>
+<h3>Question #2:</h3>
+<audio controls src="https://cdn.discordapp.com/attachments/953722764907413504/1544089156529950792/2_B_flat.mp3?ex=6a973c96&is=6a95eb16&hm=7657a16197b7a422e98177695a0d7c5700df78b3d18ecef10b4287b85b9944d6&"></audio>
+<p></p>
+<div>
+    <label for="note">What note is played?</label>
+    <select id="q2" name="note">
+        <option value="c">C</option>
+        <option value="c#">C#/D♭</option>
+        <option value="d">D</option>
+        <option value="d#">D#/E♭</option>
+        <option value="e">E</option>
+        <option value="f">F</option>
+        <option value="f#">F#/G♭</option>
+        <option value="g">G</option>
+        <option value="g#">G#/A♭</option>
+        <option value="a">A</option>
+        <option value="a#">A#/B♭</option>
+        <option value="b">B</option>
+    </select>
+    <button onclick="checkq2()">check</button>
+    <span id="q2feedback"></span>
+</div>
+<h3>Question #3:</h3>
+<audio controls src="https://cdn.discordapp.com/attachments/953722764907413504/1544089156211187893/3_E.mp3?ex=6a973c96&is=6a95eb16&hm=f1fd182017577bc6a662eea50749a09da530ebfc9cc7f73305ddea361c61ad54&"></audio>
+<p></p>
+<div>
+    <label for="note">What note is played?</label>
+    <select id="q3" name="note">
+        <option value="c">C</option>
+        <option value="c#">C#/D♭</option>
+        <option value="d">D</option>
+        <option value="d#">D#/E♭</option>
+        <option value="e">E</option>
+        <option value="f">F</option>
+        <option value="f#">F#/G♭</option>
+        <option value="g">G</option>
+        <option value="g#">G#/A♭</option>
+        <option value="a">A</option>
+        <option value="a#">A#/B♭</option>
+        <option value="b">B</option>
+    </select>
+    <button onclick="checkq3()">check</button>
+    <span id="q3feedback"></span>
+</div>
+<h3>Question #4:</h3>
+<audio controls src="https://cdn.discordapp.com/attachments/953722764907413504/1544089155850604574/4_f_sharp.mp3?ex=6a973c96&is=6a95eb16&hm=98d3ff6f5eed8e0eadbca5ce7a5ec3959afe442bd75247fc57a9ebbe9536b469&"></audio>
+<p></p>
+<div>
+    <label for="note">What note is played?</label>
+    <select id="q4" name="note">
+        <option value="c">C</option>
+        <option value="c#">C#/D♭</option>
+        <option value="d">D</option>
+        <option value="d#">D#/E♭</option>
+        <option value="e">E</option>
+        <option value="f">F</option>
+        <option value="f#">F#/G♭</option>
+        <option value="g">G</option>
+        <option value="g#">G#/A♭</option>
+        <option value="a">A</option>
+        <option value="a#">A#/B♭</option>
+        <option value="b">B</option>
+    </select>
+    <button onclick="checkq4()">check</button>
+    <span id="q4feedback"></span>
+</div>
+<h2>Double note section</h2>
+<h3>Question #5:</h3>
+<audio controls src="https://cdn.discordapp.com/attachments/953722764907413504/1544089155531841657/5_D_A_flat.mp3?ex=6a973c96&is=6a95eb16&hm=a25682ccda8e72107bd68fe601125ac7ca3ff49c9a0cd72d881866446c497681&"></audio>
+<p></p>
+<div>
+    <label for="note">What notes are played?</label>
+    <select id="q5" name="note" multiple>
+        <option value="c">C</option>
+        <option value="c#">C#/D♭</option>
+        <option value="d">D</option>
+        <option value="d#">D#/E♭</option>
+        <option value="e">E</option>
+        <option value="f">F</option>
+        <option value="f#">F#/G♭</option>
+        <option value="g">G</option>
+        <option value="g#">G#/A♭</option>
+        <option value="a">A</option>
+        <option value="a#">A#/B♭</option>
+        <option value="b">B</option>
+    </select>
+    <button onclick="checkq5()">check</button>
+    <span id="q5feedback"></span>
+</div>
+<h3>Question #6:</h3>
+<audio controls src="https://cdn.discordapp.com/attachments/953722764907413504/1544089155238101002/6_C_sharp_F.mp3?ex=6a973c96&is=6a95eb16&hm=ef04969e97e00673651c48dc5b93189e26537428a428937c9ab1398acb0943c0&"></audio>
+<p></p>
+<div>
+    <label for="note">What notes are played?</label>
+    <select id="q6" name="note" multiple>
+        <option value="c">C</option>
+        <option value="c#">C#/D♭</option>
+        <option value="d">D</option>
+        <option value="d#">D#/E♭</option>
+        <option value="e">E</option>
+        <option value="f">F</option>
+        <option value="f#">F#/G♭</option>
+        <option value="g">G</option>
+        <option value="g#">G#/A♭</option>
+        <option value="a">A</option>
+        <option value="a#">A#/B♭</option>
+        <option value="b">B</option>
+    </select>
+    <button onclick="checkq6()">check</button>
+    <span id="q6feedback"></span>
+</div>
+<h2>Chord section</h2>
+<h3>Question #7:</h3>
+<audio controls src="https://cdn.discordapp.com/attachments/953722764907413504/1544089154923536464/7_A_flat_major.mp3?ex=6a973c96&is=6a95eb16&hm=4bdb2d7d983fc490c40cac28833ffb561d55bb66f10b1dd7cf25773a39b833d9&"></audio>
+<p></p>
+<div>
+    <label for="note">What is the root note of the chord played?</label>
+    <select id="q7" name="note">
+        <option value="c">C</option>
+        <option value="c#">C#/D♭</option>
+        <option value="d">D</option>
+        <option value="d#">D#/E♭</option>
+        <option value="e">E</option>
+        <option value="f">F</option>
+        <option value="f#">F#/G♭</option>
+        <option value="g">G</option>
+        <option value="g#">G#/A♭</option>
+        <option value="a">A</option>
+        <option value="a#">A#/B♭</option>
+        <option value="b">B</option>
+    </select>
+    <button onclick="checkq7()">check</button>
+    <span id="q7feedback"></span>
+</div>
+<div>
+    <label for="type">Is this a major or minor chord?</label>
+    <select id="major1" name="type">
+        <option value="major">Major</option>
+        <option value="minor">Minor</option>
+    </select>
+    <button onclick="checkmajor1()">check</button>
+    <span id="major1feedback"></span>
+</div>
+<h3>Question #8:</h3>
+<audio controls src="https://cdn.discordapp.com/attachments/953722764907413504/1544089154558894100/8_E_minor.mp3?ex=6a973c96&is=6a95eb16&hm=3258b7854e49dec94ea289067299abdd9efbd41250e9f6d12e2b3384e8ecd6f7&"></audio>
+<p></p>
+<div>
+    <label for="note">What is the root note of the chord played?</label>
+    <select id="q8" name="note">
+        <option value="c">C</option>
+        <option value="c#">C#/D♭</option>
+        <option value="d">D</option>
+        <option value="d#">D#/E♭</option>
+        <option value="e">E</option>
+        <option value="f">F</option>
+        <option value="f#">F#/G♭</option>
+        <option value="g">G</option>
+        <option value="g#">G#/A♭</option>
+        <option value="a">A</option>
+        <option value="a#">A#/B♭</option>
+        <option value="b">B</option>
+    </select>
+    <button onclick="checkq8()">check</button>
+    <span id="q8feedback"></span>
+</div>
+<div>
+    <label for="type">Is this a major or minor chord?</label>
+    <select id="major2" name="type">
+        <option value="major">Major</option>
+        <option value="minor">Minor</option>
+    </select>
+    <button onclick="checkmajor2()">check</button>
+    <span id="major2feedback"></span>
+</div>
+<h2>Triple note section</h2>
+<h3>Question #9:</h3>
+<audio controls src="https://cdn.discordapp.com/attachments/953722764907413504/1544089154239996065/9_C_F_sharp_G_sharp.mp3?ex=6a973c96&is=6a95eb16&hm=2f9e83512e397316f825fcb310c14a252718101004389a8f1506e2145302a52c&"></audio>
+<p></p>
+<div>
+    <label for="note">What notes are played?</label>
+    <select id="q9" name="note" multiple>
+        <option value="c">C</option>
+        <option value="c#">C#/D♭</option>
+        <option value="d">D</option>
+        <option value="d#">D#/E♭</option>
+        <option value="e">E</option>
+        <option value="f">F</option>
+        <option value="f#">F#/G♭</option>
+        <option value="g">G</option>
+        <option value="g#">G#/A♭</option>
+        <option value="a">A</option>
+        <option value="a#">A#/B♭</option>
+        <option value="b">B</option>
+    </select>
+    <button onclick="checkq9()">check</button>
+    <span id="q9feedback"></span>
+</div>
+<h1>IDENTIFY THE JAZZ CHORD!</h1> <h5>(gulp)</h5>
+<h2>Question #10:</h2>
+<audio controls src="https://cdn.discordapp.com/attachments/953722764907413504/1544089153883472014/ten_D_flat_13.mp3?ex=6a973c96&is=6a95eb16&hm=1cfc821a6e01c62bfbbee1d5762329f477813ac5629708f3ed43004850831adb&"></audio>
+<p></p>
+<div>
+    <label for="note">What chord is this?</label>
+    <select id="q10" name="note">
+        <option value="1">Cmaj9</option>
+        <option value="2">D♭13</option>
+        <option value="3">F7(♯11)</option>
+        <option value="4">B♭m11</option>
+        <option value="5">E13</option>
+    </select>
+    <button onclick="checkq10()">check</button>
+    <span id="q10feedback"></span>
+</div>
+<br></br>
+<br></br>
+<p> Congrats! You finished The Very Boring-Looking Perfect Pitch Test™!<br><br>
+The final step of the test is to go brag to you friends about how you did :D</p>
+<script>
+    function checkq1() {
+        if (document.getElementById("q1").value === "c") {
+            document.getElementById("q1feedback").innerText = "You got it!";
+        } else {
+            document.getElementById("q1feedback").innerText = "Not quite... :(";
+        }
+    }
+</script>
+<script>
+    function checkq2() {
+        if (document.getElementById("q2").value === "a#") {
+            document.getElementById("q2feedback").innerText = "You got it!";
+        } else {
+            document.getElementById("q2feedback").innerText = "Not quite... :(";
+        }
+    }
+</script>
+<script>
+    function checkq3() {
+        if (document.getElementById("q3").value === "e") {
+            document.getElementById("q3feedback").innerText = "You got it!";
+        } else {
+            document.getElementById("q3feedback").innerText = "Not quite... :(";
+        }
+    }
+</script>
+<script>
+    function checkq4() {
+        if (document.getElementById("q4").value === "f#") {
+            document.getElementById("q4feedback").innerText = "You got it!";
+        } else {
+            document.getElementById("q4feedback").innerText = "Not quite... :(";
+        }
+    }
+</script>
+<script>
+    function checkq5() {
+        console.log(document.getElementById("q5").value);
+        if (document.getElementById("q5").value == ["d", "g#"]) {
+            document.getElementById("q5feedback").innerText = "You got it!";
+        } else {
+            document.getElementById("q5feedback").innerText = "Not quite... :(";
+        }
+    }
+</script>
+<script>
+    function checkq6() {
+        if (document.getElementById("q6").value == ["c#", "f"]) {
+            document.getElementById("q6feedback").innerText = "You got it!";
+        } else {
+            document.getElementById("q6feedback").innerText = "Not quite... :(";
+        }
+    }
+</script>
+<script>
+    function checkq7() {
+        if (document.getElementById("q7").value === "g#") {
+            document.getElementById("q7feedback").innerText = "You got it!";
+        } else {
+            document.getElementById("q7feedback").innerText = "Not quite... :(";
+        }
+    }
+</script>
+<script>
+    function checkmajor1() {
+        if (document.getElementById("major1").value === "major") {
+            document.getElementById("major1feedback").innerText = "Huzzah!";
+        } else {
+            document.getElementById("major1feedback").innerText = "Sorry, it was major...";
+        }
+    }
+</script>
+<script>
+    function checkq8() {
+        if (document.getElementById("q8").value === "e") {
+            document.getElementById("q8feedback").innerText = "Huzzah!";
+        } else {
+            document.getElementById("q8feedback").innerText = "Sorry, it was minor...";
+        }
+    }
+</script>
+<script>
+    function checkmajor2() {
+        if (document.getElementById("major2").value === "minor") {
+            document.getElementById("major2feedback").innerText = "You got it!";
+        } else {
+            document.getElementById("major2feedback").innerText = "Not quite... :(";
+        }
+    }
+</script>
+<script>
+    function checkq9() {
+        if (document.getElementById("q9").value === ["c", "f#", "g#"]) {
+            document.getElementById("q9feedback").innerText = "You got it!";
+        } else {
+            document.getElementById("q9feedback").innerText = "Not quite... :(";
+        }
+    }
+</script>
+<script>
+    function checkq10() {
+        if (document.getElementById("q10").value === "2") {
+            document.getElementById("q10feedback").innerText = "You got it!";
+        } else {
+            document.getElementById("q10feedback").innerText = "Not quite... :(";
+        }
+    }
+</script>
+</body>
+</html>
