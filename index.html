@@ -257,6 +257,10 @@
 <p> Congrats! You finished The Very Boring-Looking Perfect Pitch Test™!<br><br>
 The final step of the test is to go brag to you friends about how you did :D</p>
 <script>
+    function arraysMatch(arr1, arr2) {
+        return arr1.length === arr2.length && arr1.every((val, i) => val === arr2[i]);
+    }
+
     function checkq1() {
         if (document.getElementById("q1").value === "c") {
             document.getElementById("q1feedback").innerText = "You got it!";
@@ -264,8 +268,7 @@ The final step of the test is to go brag to you friends about how you did :D</p>
             document.getElementById("q1feedback").innerText = "Not quite... :(";
         }
     }
-</script>
-<script>
+
     function checkq2() {
         if (document.getElementById("q2").value === "a#") {
             document.getElementById("q2feedback").innerText = "You got it!";
@@ -273,8 +276,7 @@ The final step of the test is to go brag to you friends about how you did :D</p>
             document.getElementById("q2feedback").innerText = "Not quite... :(";
         }
     }
-</script>
-<script>
+
     function checkq3() {
         if (document.getElementById("q3").value === "e") {
             document.getElementById("q3feedback").innerText = "You got it!";
@@ -282,8 +284,7 @@ The final step of the test is to go brag to you friends about how you did :D</p>
             document.getElementById("q3feedback").innerText = "Not quite... :(";
         }
     }
-</script>
-<script>
+
     function checkq4() {
         if (document.getElementById("q4").value === "f#") {
             document.getElementById("q4feedback").innerText = "You got it!";
@@ -291,27 +292,23 @@ The final step of the test is to go brag to you friends about how you did :D</p>
             document.getElementById("q4feedback").innerText = "Not quite... :(";
         }
     }
-</script>
-<script>
+
     function checkq5() {
-        console.log(document.getElementById("q5").value);
-        if (document.getElementById("q5").value == ["d", "g#"]) {
+        if (arraysMatch(Array.from(document.getElementById("q5").selectedOptions).map(option => option.value), ["d", "g#"])) {
             document.getElementById("q5feedback").innerText = "You got it!";
         } else {
             document.getElementById("q5feedback").innerText = "Not quite... :(";
         }
     }
-</script>
-<script>
+
     function checkq6() {
-        if (document.getElementById("q6").value == ["c#", "f"]) {
+        if (arraysMatch(Array.from(document.getElementById("q6").selectedOptions).map(option => option.value), ["c#", "f"])) {
             document.getElementById("q6feedback").innerText = "You got it!";
         } else {
             document.getElementById("q6feedback").innerText = "Not quite... :(";
         }
     }
-</script>
-<script>
+
     function checkq7() {
         if (document.getElementById("q7").value === "g#") {
             document.getElementById("q7feedback").innerText = "You got it!";
@@ -319,8 +316,7 @@ The final step of the test is to go brag to you friends about how you did :D</p>
             document.getElementById("q7feedback").innerText = "Not quite... :(";
         }
     }
-</script>
-<script>
+
     function checkmajor1() {
         if (document.getElementById("major1").value === "major") {
             document.getElementById("major1feedback").innerText = "Huzzah!";
@@ -328,8 +324,7 @@ The final step of the test is to go brag to you friends about how you did :D</p>
             document.getElementById("major1feedback").innerText = "Sorry, it was major...";
         }
     }
-</script>
-<script>
+
     function checkq8() {
         if (document.getElementById("q8").value === "e") {
             document.getElementById("q8feedback").innerText = "Huzzah!";
@@ -337,8 +332,7 @@ The final step of the test is to go brag to you friends about how you did :D</p>
             document.getElementById("q8feedback").innerText = "Sorry, it was minor...";
         }
     }
-</script>
-<script>
+
     function checkmajor2() {
         if (document.getElementById("major2").value === "minor") {
             document.getElementById("major2feedback").innerText = "You got it!";
@@ -346,17 +340,15 @@ The final step of the test is to go brag to you friends about how you did :D</p>
             document.getElementById("major2feedback").innerText = "Not quite... :(";
         }
     }
-</script>
-<script>
+
     function checkq9() {
-        if (document.getElementById("q9").value === ["c", "f#", "g#"]) {
+        if (arraysMatch(Array.from(document.getElementById("q9").selectedOptions).map(option => option.value), ["c", "f#", "g#"])) {
             document.getElementById("q9feedback").innerText = "You got it!";
         } else {
             document.getElementById("q9feedback").innerText = "Not quite... :(";
         }
     }
-</script>
-<script>
+
     function checkq10() {
         if (document.getElementById("q10").value === "2") {
             document.getElementById("q10feedback").innerText = "You got it!";
